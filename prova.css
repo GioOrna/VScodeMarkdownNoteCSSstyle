@@ -1,3 +1,17 @@
+/* Remove the white vertical borders / padding */
+.markdown-body {
+    margin: 0 !important;      /* Remove outside margin */
+    padding: 0 !important;     /* Remove inside padding */
+    max-width: 100% !important; /* Make it full width */
+    box-shadow: none !important; /* Remove any shadows if present */
+}
+
+/* Optional: make the editor background fully match your theme */
+body, .markdown-body {
+    background-color: #0d1117; /* GitHub dark background */
+    color: #c9d1d9;            /* Text color for GitHub dark */
+}
+
 .markdown-body {
   color-scheme: dark;
   -ms-text-size-adjust: 100%;
@@ -1004,4 +1018,5 @@
 
 .markdown-body ::-webkit-calendar-picker-indicator {
   filter: invert(50%);
+
 }
